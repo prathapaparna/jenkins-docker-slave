@@ -125,6 +125,13 @@ install docker,docker pipeline, aws, aws pipeline steps plugins in jenkins
   ![image](https://user-images.githubusercontent.com/99127429/157305899-d268be82-0dd0-4a4b-9d75-54f7fda9dcc5.png)
   
 ![image](https://user-images.githubusercontent.com/99127429/157305932-7494df66-5a0c-4fdc-8bfd-54be6bd2198e.png)
+ 
+ ## create a pipeline job and push docker image to ECR
+ 
+ ![image](https://user-images.githubusercontent.com/99127429/157307716-6871b984-21ea-431a-8e3d-b6b2fc544177.png)
+ ![image](https://user-images.githubusercontent.com/99127429/157307796-d73b213f-c6c8-45d3-9be1-82bbc855a13e.png)
+
+
   
   
 
