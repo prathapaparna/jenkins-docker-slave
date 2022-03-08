@@ -1,16 +1,15 @@
 # jenkins-docker-slave
 ## install jenkins on linux machine
-1.	Create 2 ec2 instances
-2.	 Install Jenkins in one server
-3.	 ```
-                  Cd /opt
-                  yum install java-1.8.0-openjdk-devel -y
-                  wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
-                      rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
-                      yum install jenkins -y
-                     systemctl start Jenkins
-                     systemctl enable Jenkins
-                     ```
+	 Install Jenkins in one server
+	 ```
+     Cd /opt
+     yum install java-1.8.0-openjdk-devel -y
+     wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+     rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+     yum install jenkins -y
+     systemctl start Jenkins
+     systemctl enable Jenkins
+   ```
 open port 8080 in security group  and open jenkins ui http://<ip>:8080
   
   copy initial password and unlock jenkins
@@ -27,7 +26,8 @@ https://linuxize.com/post/how-to-install-and-use-docker-on-ubuntu-18-04/
   
   
 ## Configure docker host with remote API
-                  Log in to the server and open the docker service file /lib/systemd/system/docker.service. Search for ExecStart and replace that line with the following
+
+Log in to the server and open the docker service file /lib/systemd/system/docker.service. Search for ExecStart and replace that line with the following
   ```
  ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock
   ```
