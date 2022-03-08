@@ -1,0 +1,36 @@
+pipeline {
+  environment {
+    registry = '275829808721.dkr.ecr.us-east-1.amazonaws.com/springboot-repo'
+    registryCredential = 'aws-credentials'
+    dockerImage = ''
+  }
+  agent { 
+        label 'slave'
+    }
+  stages {
+    stage('git checkout'){
+            steps{
+                git branch: 'main', credentialsId: 'git-key', url: 'https://github.com/prathapaparna/springboot-hello.git'
+            }
+        }
+        stage('Build Maven'){
+            steps{
+                sh 'mvn clean install -DskipTests=true'
+            }
+        }
+    
+    stage('Deploy image') {
+        steps{
+            script{
+                docker.withRegistry("https://" + registry, "ecr:us-east-1:" + registryCredential) {
+                    sh '''
+                    docker build -t springboot-repo .
+	docker tag springboot-repo:latest 275829808721.dkr.ecr.us-east-1.amazonaws.com/springboot-repo:latest
+	docker push 275829808721.dkr.ecr.us-east-1.amazonaws.com/springboot-repo:latest
+	'''
+                }
+            }
+        }
+    }
+  }
+}
