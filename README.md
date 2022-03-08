@@ -2,6 +2,7 @@
 ## install jenkins on linux machine
 1.	Create 2 ec2 instances
 2.	 Install Jenkins in one server
+3.	 ```
                   Cd /opt
                   yum install java-1.8.0-openjdk-devel -y
                   wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
@@ -9,6 +10,7 @@
                       yum install jenkins -y
                      systemctl start Jenkins
                      systemctl enable Jenkins
+                     ```
 open port 8080 in security group  and open jenkins ui http://<ip>:8080
   
   copy initial password and unlock jenkins
