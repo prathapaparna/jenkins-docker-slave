@@ -132,6 +132,12 @@ install docker,docker pipeline, aws, aws pipeline steps plugins in jenkins
  ![image](https://user-images.githubusercontent.com/99127429/157307796-d73b213f-c6c8-45d3-9be1-82bbc855a13e.png)
  
  
+ run the pipeline job 
+ ![image](https://user-images.githubusercontent.com/99127429/157310530-92711f6b-b2f0-4b1f-bd87-3e32a2d49053.png)
+![image](https://user-images.githubusercontent.com/99127429/157310576-80af2680-c0cb-40c0-9680-f9afcdd0744d.png)
+
+ your image pushed into aws ECR
+ 
  
  referal link: https://devopscube.com/docker-containers-as-build-slaves-jenkins/
 
