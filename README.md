@@ -45,7 +45,9 @@ curl http://localhost:4243/version
 curl http://54.221.134.7:4243/version
 ```
   ### write dockerfile and create docker image for slaves
+ 
   docker build -t <reponame>/<imagename>:<tagname> .
+ 
   docker push <reponame>/<imagename>:<tagname>
   
 ## configure cloud in jenkins
