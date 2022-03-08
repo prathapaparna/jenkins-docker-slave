@@ -1,5 +1,6 @@
 pipeline {
   environment {
+    DOCKER_HOST  = 'tcp://35.172.119.214:4243/' 
     registry = '275829808721.dkr.ecr.us-east-1.amazonaws.com/springboot-repo'
     registryCredential = 'aws-credentials'
     dockerImage = ''
