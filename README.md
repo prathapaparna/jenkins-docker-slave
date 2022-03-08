@@ -130,6 +130,10 @@ install docker,docker pipeline, aws, aws pipeline steps plugins in jenkins
  
  ![image](https://user-images.githubusercontent.com/99127429/157307716-6871b984-21ea-431a-8e3d-b6b2fc544177.png)
  ![image](https://user-images.githubusercontent.com/99127429/157307796-d73b213f-c6c8-45d3-9be1-82bbc855a13e.png)
+ 
+ 
+ 
+ referal link: https://devopscube.com/docker-containers-as-build-slaves-jenkins/
 
 
   
