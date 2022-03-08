@@ -115,6 +115,7 @@ CMD ["/usr/sbin/sshd", "-D"]
   
 ## configure cloud in jenkins
 install docker,docker pipeline, aws, aws pipeline steps plugins in jenkins
+ 
   Head over to Jenkins Dashboard --> manage jenkins --> manage plugins ---> avilable
   
   Head over to Jenkins Dashboard –> Manage Jenkins –> manage nodes and clouds  configure cloud 
