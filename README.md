@@ -1,6 +1,6 @@
 # jenkins-docker-slave
 ## install jenkins on linux machine
-	 Install Jenkins in one server
+ Install Jenkins in one server
  ```
      Cd /opt
      yum install java-1.8.0-openjdk-devel -y
